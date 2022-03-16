@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>CDC.Employee.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CDC.Employee.Core\CDC.Employee.Core.csproj" />
+    <ProjectReference Include="..\CDC.Employee.Infrastructure\CDC.Employee.Infrastructure.csproj" />
+    <ProjectReference Include="..\CDC.Employee.Model\CDC.Employee.Model.csproj" />
+  </ItemGroup>
+
+</Project>

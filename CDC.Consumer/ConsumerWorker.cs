@@ -1,4 +1,5 @@
-﻿using Confluent.Kafka;
+﻿using CDC.Employee.Application;
+using Confluent.Kafka;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
@@ -13,8 +14,9 @@ namespace CDC.Consumer
     {
         private readonly ILogger<ConsumerWorker> _logger;
         private readonly IConsumer<string, string> _consumer;
+        private readonly IProcessMessage _processMessage;
 
-        public ConsumerWorker(ILogger<ConsumerWorker> logger)
+        public ConsumerWorker(ILogger<ConsumerWorker> logger, IProcessMessage processMessage)
         {
             _logger = logger;
 
@@ -29,6 +31,8 @@ namespace CDC.Consumer
 
             _consumer = new ConsumerBuilder<string, string>(conf)
                 .Build();
+            
+            _processMessage = processMessage;
         }
 
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
@@ -54,7 +58,9 @@ namespace CDC.Consumer
                         dynamic dynamicReceivedMessage = (dynamic)JObject.Parse(receivedMessage);
                         string eventName = Convert.ToString(dynamicReceivedMessage.eventName);
                         _logger.LogInformation(eventName);
-                        _logger.LogInformation(result.Message.Key);
+
+                        // Processing event
+                        _processMessage.ProcessKafkaMessage(new Employee.Model.ConsumedMessage { Message = receivedMessage, Key = result.Message.Key });
 
                         _consumer.Commit(); // note: committing every time can have a negative impact on performance
                     }

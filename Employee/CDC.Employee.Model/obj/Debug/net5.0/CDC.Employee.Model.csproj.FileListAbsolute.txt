@@ -1,0 +1,12 @@
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\bin\Debug\net5.0\CDC.Employee.Model.deps.json
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\bin\Debug\net5.0\CDC.Employee.Model.dll
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\bin\Debug\net5.0\ref\CDC.Employee.Model.dll
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\bin\Debug\net5.0\CDC.Employee.Model.pdb
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\obj\Debug\net5.0\CDC.Employee.Model.GeneratedMSBuildEditorConfig.editorconfig
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\obj\Debug\net5.0\CDC.Employee.Model.AssemblyInfoInputs.cache
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\obj\Debug\net5.0\CDC.Employee.Model.AssemblyInfo.cs
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\obj\Debug\net5.0\CDC.Employee.Model.csproj.CoreCompileInputs.cache
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\obj\Debug\net5.0\CDC.Employee.Model.dll
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\obj\Debug\net5.0\ref\CDC.Employee.Model.dll
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\obj\Debug\net5.0\CDC.Employee.Model.pdb
+N:\Github Repos\CDC.Consumer\Employee\CDC.Employee.Model\obj\Debug\net5.0\CDC.Employee.Model.csproj.AssemblyReference.cache
